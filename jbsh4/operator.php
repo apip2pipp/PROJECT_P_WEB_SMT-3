@@ -62,14 +62,12 @@ $b = 5;
 
 $a += $b;  
 echo "Hasil Penjumlahan (a += b): $a<br>"; 
-
 $a -= $b; 
 echo "Hasil Pengurangan (a -= b): $a<br>"; 
 $a *= $b;  
 echo "Hasil Perkalian (a *= b): $a<br>"; 
 $a /= $b;  
 echo "Hasil Pembagian (a /= b): $a<br>"; 
-
 $a %= $b;  
 echo "Hasil Modulus (a %= b): $a<br>"; 
 ?>
@@ -81,7 +79,6 @@ $b = '10';
 
 $hasilIdentik = $a === $b; 
 echo "Hasil Identik (a === b): " . ($hasilIdentik ? 'True' : 'False') . "<br>"; 
-
 $hasilTidakIdentik = $a !== $b; 
 echo "Hasil Tidak Identik (a !== b): " . ($hasilTidakIdentik ? 'True' : 'False') . "<br>";
 ?>

@@ -1,10 +1,8 @@
 <?php
-
 $totalSeats = 45;
 $occupiedSeats = 28;
 $emptySeats = $totalSeats - $occupiedSeats;
 $percentageEmpty = ($emptySeats / $totalSeats) * 100;
-
 
 echo "Total Seats: $totalSeats<br>";
 echo "Occupied Seats: $occupiedSeats<br>";

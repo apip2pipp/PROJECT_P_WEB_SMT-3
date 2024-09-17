@@ -2,10 +2,8 @@
 $originalPrice = 120000;
 $discountPercentage = 20;
 
-
 $discountAmount = ($discountPercentage / 100) * $originalPrice;
 $finalPrice = $originalPrice - $discountAmount;
-
 
 echo "Original Price: Rp " . number_format($originalPrice, 0, ',', '.') . "<br>";
 echo "Discount: " . $discountPercentage . "%<br>";
