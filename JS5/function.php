@@ -9,4 +9,45 @@ function perkenalan() {
 
 // Memanggil fungsi yang sudah dibuat dua kali
 perkenalan();
+
+
+// Membuat fungsi
+// function perkenalan($nama, $salam) {
+//     echo $salam . ", ";
+//     echo "Perkenalkan, nama saya " . $nama . "<br/>";
+//     echo "Senang berkenalan dengan Anda<br/>";
+// }
+
+// // Memanggil fungsi yang sudah dibuat
+// perkenalan("APPPIIP", "Hallo");
+
+// echo "<hr>";
+
+// $saya = "APIIP";
+// $ucapanSalam = "Selamat pagi";
+
+// // Memanggil lagi
+// perkenalan($saya, $ucapanSalam);
+
+
+
+// Membuat fungsi
+// function perkenalan($nama, $salam = "Assalamualaikum") {
+//     echo $salam . ", ";
+//     echo "Perkenalkan, nama saya " . $nama . "<br/>";
+//     echo "Senang berkenalan dengan Anda<br/>";
+// }
+
+// // Memanggil fungsi yang sudah dibuat
+// perkenalan("Apip", "Hallo");
+
+// echo "<hr>";
+
+// $saya = "Apip";
+// $ucapanSalam = "Selamat pagi";
+
+// // Memanggil lagi tanpa mengisi parameter salam
+// perkenalan($saya);
+
+
 ?>
