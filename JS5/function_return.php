@@ -5,6 +5,15 @@ function hitungUmur($thn_lahir, $thn_sekarang) {
     return $umur;
 }
 
-// Menampilkan umur
-echo "Umur saya adalah " . hitungUmur(1988, 2023) . " tahun"; // Isi sesuai dengan tahun lahir kalian
+function perkenalan($nama, $salam = "Assalamualaikum") {
+    echo $salam . ". ";
+    echo "Perkenalkan, nama saya " . $nama . "<br/>";
+}
+
+// Memanggil fungsi lain
+echo "Saya berusia " . hitungUmur(2005, 2024) . " tahun<br/>";
+echo "Senang berkenalan dengan anda<br/>";
+
+// Memanggil fungsi perkenalan
+perkenalan("apippp");
 ?>
