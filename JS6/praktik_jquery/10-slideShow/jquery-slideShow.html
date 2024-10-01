@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>JQUERY SLIDE SHOW</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        var i = 0
+        $(document).ready(() => {
+            $('.slidertitle, #slider img').hide()
+            showNextImage()
+            setInterval('showNextImage()', 3000)
+        })
+
+        function showNextImage() {
+            i++
+            $('#sliderimage' + i).appendTo('#slider')
+                .fadeIn(1100)
+                .fadeOut(1100)
+            $('#title' + i).appendTo('#slider')
+                .fadeIn(1100)
+                .fadeOut(1100)
+
+            i = i == 3 ? 0 : i
+        }
+    </script>
+</head>
+<body>
+    <div id="slider">
+        <img src="ult1.jpg" alt="ultramann ribut" id="sliderimage1">
+        <div class="slidertitle" id="title1">Gambar 1</div>
+
+        <img src="ult2.jpg" alt="Godzila kecil" id="sliderimage2">
+        <div class="slidertitle" id="title2">Gambar 2</div>
+
+        <img src="ult3.jpg" alt="ultraman cosmos" id="sliderimage3">
+        <div class="slidertitle" id="title3">Gambar 3</div>
+    </div>
+</body>
+</html>
