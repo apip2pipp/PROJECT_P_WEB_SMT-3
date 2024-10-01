@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>JQUERY AJAX</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('button').click(() => {
+                $('#box').load('newPage.html')
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="box">
+        <h2>Klik tombol di bawah untuk menampilkan konten</h2>
+    </div>
+    <button type="button">Klik saya!</button>
+</body>
+</html>
