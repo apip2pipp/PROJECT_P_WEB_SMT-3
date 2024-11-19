@@ -1,5 +1,5 @@
 <?php
-class Car
+class Car3
 {
     private $brand;
 
@@ -20,6 +20,6 @@ class Car
     }
 }
 
-$car = new Car("Toyota");
+$car = new Car3("Toyota");
 echo "Brand: " . $car->getBrand() . "<br>";
 ?>
