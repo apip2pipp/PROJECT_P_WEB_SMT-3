@@ -12,12 +12,12 @@ include_once('../lib/Secure.php');
  
 $act = isset($_GET['act'])? strtolower($_GET['act']) : ''; 
  
-if($act == 'load'){
+if($act == 'load'){ 
     $kategori = new KategoriModel(); 
     $data = $kategori->getData(); 
     $result = []; 
     $i = 1; 
-    while($row = $data->fetch_assoc()){ 
+    foreach($data as $row){ 
         $result['data'][] = [ 
             $i, 
             $row['kategori_kode'], 
@@ -44,8 +44,7 @@ if($act == 'save'){
     $data = [ 
         'kategori_kode' => antiSqlInjection($_POST['kategori_kode']), 
         'kategori_nama' => antiSqlInjection($_POST['kategori_nama']) 
-    ]; 
- 
+    ];
     $kategori = new KategoriModel(); 
     $kategori->insertData($data); 
  
@@ -78,7 +77,7 @@ if($act == 'delete'){
     $kategori->deleteData($id); 
  
     echo json_encode([ 
-        'status' => true, 
+        'status' => true,  
         'message' => 'Data berhasil dihapus.' 
-]); 
-}
+    ]); 
+} 
