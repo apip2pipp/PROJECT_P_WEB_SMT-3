@@ -4,7 +4,7 @@
     $host     = 'LAPTOP-Q3PDL8SK'; 
     $username = ''; //'sa'; 
     $password = ''; 
-    $database = 'master'; 
+    $database = 'dasar_web'; 
     $db; 
  
     if($use_driver == 'mysql'){    
@@ -33,4 +33,6 @@
         }catch(Exception $e){ 
             die($e->getMessage()); 
         } 
+
+        
     }
